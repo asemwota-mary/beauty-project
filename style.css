@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    margin-block: 34px;
+    /* justify-content: space-between; */
+}
+
+header h3 {
+    margin-inline: 108px 198px;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+    padding-inline: 85px;
+}
+
+.hero {
+    background-color: #F4F4F4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1600px;
+}
+
+.hero-text {
+    margin: 230px 0 278px 100px;
+}
+
+.hero-text h2 {
+    font-size: 64px;
+    line-height: 100%;
+    font-weight: 700;
+    color: #000000;
+}
+
+.hero-text p {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 400;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.button-class button {
+    background-color: #000000;
+    color: #FFFFFF;
+    /* border: none; */
+    padding: 20px 40px;
+    margin-top: 40px;
+}
+
+.offerings {
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    max-width: 1600px;
+    margin-block: 54px;
+}
+
+.offerings-1 {
+    margin-left: 107px;
+    text-align: center;
+}
+
+.offerings-1 h4 {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.offerings-1 p {
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.offerings-2 {
+    margin-left: 218px;
+    text-align: center;
+}
+
+.offerings-2 h4 {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.offerings-2 p {
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.offerings-3 {
+    margin-left: 218px;
+    text-align: center;
+}
+
+.offerings-3 h4 {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.offerings-3 p {
+    font-size: 16px;
+    line-height: 100%;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.shop-category {
+    margin-left: 100px;
+    background-color: #F4F4F4;
+    /* margin-top: 88px; */
+}
+
+.shopping {
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 1600px; */
+}
+
+.shopping-text h2 {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.shopping-text p {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.direction {
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid red; */
+    margin-left: 600px;
+}
+
+.direction h4 {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+/* .direction .bx-arrow-right-stroke {
+    font-size: 40px;
+} */
+
+.sellers {
+    background-color: #F4F4F4;
+}
+
+.sales {
+    text-align: center;
+    margin-block: 60px 40px;
+}
+
+.sales h3 {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.sales p {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.sales-offers {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+    text-align: center;
+}
+
+.sales-offers h3 {
+    margin-top: 22px;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.sales-offers p {
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
+    margin-block: 10px;
+}
+
+.sales-discount {
+    text-align: center;
+    margin-top: 66px;
+}
+
+.cart {
+    padding: 10px 15px;
+}
+
+.shop {
+    padding: 10px 15px;
+    background-color: #000000;
+    color: #FFFFFF;
+}
+
+.sales-discount a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 700;
+}
+
+.sales-discount-img {
+    margin-top: 142px;
+}
+
+.reviews {
+    text-align: center;
+}
+
+.reviews-a {
+    margin-block: 100px 73px;
+}
+
+.reviews-a h3 {
+    font-size: 48px;
+    line-height: 100%;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.reviews-a p {
+    font-size: 24px;
+    line-height: 100%;
+    font-weight: 400;
+}
+
+.reviews-b {
+    display: flex;
+    gap: 31px;
+    border: 1px solid red;
+    /* width: 417px; */
+    /* height: 280px; */
+}
+
+.reviews-b p {
+    background-color: #F4F4F4;
+}
+
+footer {
+    background-color: #000000;
+}
+
+footer h3 {
+    color: #FFFFFF;
+}
