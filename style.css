@@ -6,25 +6,53 @@
 
 header {
     display: flex;
-    margin-block: 34px;
-    /* justify-content: space-between; */
-}
-
-header h3 {
-    margin-inline: 108px 198px;
+    /* margin-block: 34px; */
+    max-width: 1500px;
+    margin-inline: auto;
+    /* border: 1px solid red; */
+    padding-block: 36px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header a {
     text-decoration: none;
-    color: #000000;
-    padding-inline: 85px;
 }
 
-header a:hover {
-    background-color: aqua;
-    border-radius: 10px;
-    /* padding-inline: 20px; */
-    
+/* header h3 {
+    margin-inline: 108px 198px;
+} */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 85px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000000;
+    /* margin-inline: 85px; */
+    font-size: 20px;
+    line-height: 100%;
+    font-weight: 400;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: grey;
+    border-radius: 20px;
+    color: white;
+}
+
+.icons {
+    display: flex;
+    gap: 50px;
+}
+
+.icons i {
+    font-size: 25px;
+    cursor: pointer;
 }
 
 .hero {
@@ -65,7 +93,7 @@ header a:hover {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
-    max-width: 1600px;
+    max-width: 1500px;
     margin-block: 54px;
 }
 
@@ -267,7 +295,7 @@ header a:hover {
     display: flex;
     gap: 31px;
     /* border: 1px solid red; */
-    max-width: 1600px;
+    max-width: 1500px;
     justify-content: center;
     margin-left: 100px;
     margin-bottom: 100px;
