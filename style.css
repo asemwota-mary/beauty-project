@@ -4,13 +4,16 @@
     box-sizing: border-box;
 }
 
+button{
+    cursor: pointer;
+}
+
 header {
     display: flex;
-    /* margin-block: 34px; */
     max-width: 1500px;
     margin-inline: auto;
     /* border: 1px solid red; */
-    padding-block: 36px;
+    padding: 36px 16px;
     justify-content: space-between;
     align-items: center;
 }
@@ -50,20 +53,27 @@ nav a:hover {
     gap: 50px;
 }
 
+.hamburger {
+    display: none;
+    font-size: 30px;
+}
+
 .icons i {
     font-size: 25px;
     cursor: pointer;
 }
 
-.hero {
+.hero-container {
     background-color: #F4F4F4;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* max-width: 1600px; */
 }
 
-.hero-text {
-    margin: 230px 0 278px 100px;
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
+    margin-inline: auto;
+    align-items: center;
+    padding-inline: 16px;
 }
 
 .hero-text h2 {
@@ -81,12 +91,18 @@ nav a:hover {
     margin-top: 40px;
 }
 
-.button-class button {
+.hero-btn {
     background-color: #000000;
     color: #FFFFFF;
     /* border: none; */
     padding: 20px 40px;
     margin-top: 40px;
+    transition: all 0.5s ease-in;
+}
+
+.hero-btn:hover {
+    background-color: #FFFFFF;
+    color: #000000;
 }
 
 .offerings {
@@ -94,6 +110,8 @@ nav a:hover {
     align-items: center;
     /* justify-content: space-between; */
     max-width: 1500px;
+    margin-inline: auto;
+    padding-inline: 16px;
     margin-block: 54px;
 }
 
@@ -158,10 +176,20 @@ nav a:hover {
     /* margin-top: 88px; */
 }
 
+.shopping-container {
+    max-width: 1500px;
+    margin-inline: auto;
+}
+
 .shopping {
     display: flex;
     justify-content: space-between;
-    /* max-width: 1600px; */
+    align-items: center;
+    max-width: 1500px;
+    margin-inline: auto;
+    padding-inline: 16px;
+    flex-wrap: wrap;
+    /* border: solid red; */
 }
 
 .shopping-text h2 {
@@ -189,11 +217,13 @@ nav a:hover {
     font-size: 24px;
     line-height: 100%;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .shop-category-img {
     gap: 20px;
     display: flex;
+    overflow-x: hidden;
     /* width: 1400px; */
 }
 
@@ -203,6 +233,11 @@ nav a:hover {
 
 .sellers {
     background-color: #F4F4F4;
+    /* border: solid red; */
+    display: flex;
+    margin-inline: auto;
+    flex-direction: column;
+    padding-inline: 16px;
 }
 
 .sales {
@@ -225,8 +260,11 @@ nav a:hover {
 .sales-offers {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 35px;
     text-align: center;
+    margin-inline: auto;
+    padding-inline: 16px;
 }
 
 .sales-offers h3 {
@@ -243,10 +281,22 @@ nav a:hover {
     margin-block: 10px;
 }
 
+.sales-offers button {
+    transition: all 0.5s ease-in;
+}
+
+.sales-offers button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
 .sales-discount {
     text-align: center;
     margin-top: 66px;
+    max-width: 1500px;
+    margin-inline: auto;
 }
+
 
 .cart {
     padding: 10px 15px;
@@ -268,10 +318,16 @@ nav a:hover {
 
 .sales-discount-img {
     margin-top: 142px;
+    width: 100%;
+}
+
+.sales-discount-img img {
+    width: 100%;
 }
 
 .reviews {
     text-align: center;
+    /* border: solid red; */
 }
 
 .reviews-a {
@@ -341,11 +397,42 @@ nav a:hover {
 .connect-box {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     justify-content: center;
+    flex-direction: column;
     padding-bottom: 121px;
-    /* flex-direction: column-reverse; */
+    max-width: 800px;
+    margin-inline: auto;
 }
+
+.connect-box input {
+    padding: 20px 40px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid black;
+}
+
+textarea {
+    padding: 20px 40px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid black;
+    height: 180px;
+    resize: none;
+}
+
+.connect-box button {
+    padding: 23px;
+    background-color: #000000;
+    color: #FFFFFF;
+    transition: all 0.5s ease-in;
+}
+
+.connect-box button:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
 
 footer {
     background-color: #000000;
@@ -380,4 +467,50 @@ footer a:hover {
     /* color: #2C2F24; */
     background-color: red;
     /* border-radius: 32px; */
+}
+
+@media screen and (max-width: 1000px) {
+    .hero {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sales-offers {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .reviews-b {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shop-category-img {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .shopping {
+        /* border: 1px solid red; */
+    }
+}
+
+@media screen and (max-width: 875px) {
+    header {
+        .hamburger {
+        display: block;
+        }
+        nav {
+            display: none;
+        }
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .offerings {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 777px) {
+    .direction {
+        display: none;
+    }
 }
